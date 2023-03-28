@@ -1,0 +1,120 @@
+\hypertarget{circuit_8h}{}\section{circuit.\+h File Reference}
+\label{circuit_8h}\index{circuit.\+h@{circuit.\+h}}
+
+
+il y a ici les structures et la liaison des procedures de l\textquotesingle{}enigme.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{circuit_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structprotocol}{protocol}
+\item 
+struct \hyperlink{structsimple}{simple}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{circuit_8h_a8f387384696c4294f1521ad662b556db}{hover} (S\+D\+L\+\_\+\+Rect pos, int x, int y)
+\item 
+void \hyperlink{circuit_8h_a684ec0dae6d6c3e605a0fb811869ded8}{initialiser} (\hyperlink{structsimple}{simple} $\ast$screen, \hyperlink{structprotocol}{protocol} base3\mbox{[}$\,$\mbox{]}, \hyperlink{structprotocol}{protocol} base2\mbox{[}$\,$\mbox{]}, S\+D\+L\+\_\+\+Surface $\ast$pos3\mbox{[}$\,$\mbox{]}, S\+D\+L\+\_\+\+Surface $\ast$pos2\mbox{[}$\,$\mbox{]}, S\+D\+L\+\_\+\+Surface $\ast$$\ast$unlocked, S\+D\+L\+\_\+\+Surface $\ast$$\ast$lockked, \hyperlink{structsimple}{simple} $\ast$circuit, \hyperlink{structsimple}{simple} $\ast$locked, \hyperlink{structsimple}{simple} $\ast$image)
+\begin{DoxyCompactList}\small\item\em initialiser les donnees de l\textquotesingle{}enigme. \end{DoxyCompactList}\item 
+void \hyperlink{circuit_8h_a683586511a2c9c8b9e76a5e3fb519996}{afficher} (\hyperlink{structsimple}{simple} screen, \hyperlink{structprotocol}{protocol} base3\mbox{[}$\,$\mbox{]}, \hyperlink{structprotocol}{protocol} base2\mbox{[}$\,$\mbox{]}, S\+D\+L\+\_\+\+Surface $\ast$pos3\mbox{[}$\,$\mbox{]}, S\+D\+L\+\_\+\+Surface $\ast$pos2\mbox{[}$\,$\mbox{]}, S\+D\+L\+\_\+\+Surface $\ast$unlocked, S\+D\+L\+\_\+\+Surface $\ast$lockked, \hyperlink{structsimple}{simple} circuit, \hyperlink{structsimple}{simple} $\ast$locked, S\+D\+L\+\_\+\+Event event, \hyperlink{structsimple}{simple} image)
+\begin{DoxyCompactList}\small\item\em afficher et modifier les donnees de l\textquotesingle{}enigme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+il y a ici les structures et la liaison des procedures de l\textquotesingle{}enigme. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{circuit_8h_a683586511a2c9c8b9e76a5e3fb519996}\label{circuit_8h_a683586511a2c9c8b9e76a5e3fb519996}} 
+\index{circuit.\+h@{circuit.\+h}!afficher@{afficher}}
+\index{afficher@{afficher}!circuit.\+h@{circuit.\+h}}
+\subsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{\hyperlink{structsimple}{simple}}]{screen,  }\item[{\hyperlink{structprotocol}{protocol}}]{base3\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{structprotocol}{protocol}}]{base2\mbox{[}$\,$\mbox{]},  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{pos3\mbox{[}$\,$\mbox{]},  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{pos2\mbox{[}$\,$\mbox{]},  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{unlocked,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{lockked,  }\item[{\hyperlink{structsimple}{simple}}]{circuit,  }\item[{\hyperlink{structsimple}{simple} $\ast$}]{locked,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{\hyperlink{structsimple}{simple}}]{image }\end{DoxyParamCaption})}
+
+
+
+afficher et modifier les donnees de l\textquotesingle{}enigme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em simple} & screen \+: affiche l\textquotesingle{}ecran. \\
+\hline
+{\em protocol} & base3\mbox{[}\mbox{]},base2\mbox{[}\mbox{]} \+: change surface des liaisons electriques. \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface} & pos3\mbox{[}\mbox{]},pos2\mbox{[}\mbox{]}\+: les differents liaisons qu\textquotesingle{}il faut prendre et changer dans le circuit. \\
+\hline
+{\em S\+D\+L\+\_\+\+Event} & event \+: fait les actions generer pas le hardware. \\
+\hline
+{\em simple} & circuit \+: affiche la base circuit avec sa position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+affichage de l\textquotesingle{}enigme. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{circuit_8h_a683586511a2c9c8b9e76a5e3fb519996_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{circuit_8h_a683586511a2c9c8b9e76a5e3fb519996_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{circuit_8h_a8f387384696c4294f1521ad662b556db}\label{circuit_8h_a8f387384696c4294f1521ad662b556db}} 
+\index{circuit.\+h@{circuit.\+h}!hover@{hover}}
+\index{hover@{hover}!circuit.\+h@{circuit.\+h}}
+\subsubsection{\texorpdfstring{hover()}{hover()}}
+{\footnotesize\ttfamily int hover (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{pos,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{circuit_8h_a8f387384696c4294f1521ad662b556db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{circuit_8h_a684ec0dae6d6c3e605a0fb811869ded8}\label{circuit_8h_a684ec0dae6d6c3e605a0fb811869ded8}} 
+\index{circuit.\+h@{circuit.\+h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!circuit.\+h@{circuit.\+h}}
+\subsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}\item[{\hyperlink{structsimple}{simple} $\ast$}]{screen,  }\item[{\hyperlink{structprotocol}{protocol}}]{base3\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{structprotocol}{protocol}}]{base2\mbox{[}$\,$\mbox{]},  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{pos3\mbox{[}$\,$\mbox{]},  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{pos2\mbox{[}$\,$\mbox{]},  }\item[{S\+D\+L\+\_\+\+Surface $\ast$$\ast$}]{unlocked,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$$\ast$}]{lockked,  }\item[{\hyperlink{structsimple}{simple} $\ast$}]{circuit,  }\item[{\hyperlink{structsimple}{simple} $\ast$}]{locked,  }\item[{\hyperlink{structsimple}{simple} $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+initialiser les donnees de l\textquotesingle{}enigme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em simple} & $\ast$screen,$\ast$locked,$\ast$image \+: adresse pour changer avec surface et position de l\textquotesingle{}ecran,disponibilité et le background. \\
+\hline
+{\em protocol} & base3\mbox{[}\mbox{]},base2\mbox{[}\mbox{]} \+: different protocols pour liaison du circuit avec position et surface. \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface$\ast$} & pos3\mbox{[}\mbox{]},pos2\mbox{[}\mbox{]} \+: images des differents positions du protocol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Initialisation de l\textquotesingle{}enigme 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{circuit_8h_a684ec0dae6d6c3e605a0fb811869ded8_icgraph}
+\end{center}
+\end{figure}

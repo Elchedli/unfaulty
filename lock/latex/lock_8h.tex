@@ -1,0 +1,94 @@
+\hypertarget{lock_8h}{}\section{lock.\+h File Reference}
+\label{lock_8h}\index{lock.\+h@{lock.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{lock_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structserrure}{serrure}
+\begin{DoxyCompactList}\small\item\em il y a ici les structures et la liaison des procedures de l\textquotesingle{}enigme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{lock_8h_abd9d77bdfe0481d8d4475dac1b18fb12}{initialiser} (\hyperlink{structserrure}{serrure} $\ast$lock, \hyperlink{structserrure}{serrure} $\ast$lockpick, S\+D\+L\+\_\+\+Rect $\ast$rec, S\+D\+L\+\_\+\+Surface $\ast$$\ast$yaru)
+\begin{DoxyCompactList}\small\item\em initialiser les donnees de l\textquotesingle{}enigme. \end{DoxyCompactList}\item 
+void \hyperlink{lock_8h_a3dd80cb222a9d8b62d18dc6a84b21d06}{afficher} (int $\ast$vie, int $\ast$access, S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, \hyperlink{structserrure}{serrure} lock, \hyperlink{structserrure}{serrure} lockpick, S\+D\+L\+\_\+\+Rect $\ast$rec, S\+D\+L\+\_\+\+Surface $\ast$$\ast$yaru)
+\begin{DoxyCompactList}\small\item\em afficher et modifier les donnees de l\textquotesingle{}enigme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{lock_8h_a3dd80cb222a9d8b62d18dc6a84b21d06}\label{lock_8h_a3dd80cb222a9d8b62d18dc6a84b21d06}} 
+\index{lock.\+h@{lock.\+h}!afficher@{afficher}}
+\index{afficher@{afficher}!lock.\+h@{lock.\+h}}
+\subsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{int $\ast$}]{vie,  }\item[{int $\ast$}]{access,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{\hyperlink{structserrure}{serrure}}]{lock,  }\item[{\hyperlink{structserrure}{serrure}}]{lockpick,  }\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{rec,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$$\ast$}]{yaru }\end{DoxyParamCaption})}
+
+
+
+afficher et modifier les donnees de l\textquotesingle{}enigme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & $\ast$vie \+: modifier vie si le personnage a cliquer dehors la serrure. \\
+\hline
+{\em int} & $\ast$access \+: modifie access si le personnage a completer l\textquotesingle{}enigme. \\
+\hline
+{\em S\+D\+L\+\_\+\+Surface$\ast$} & screen\+: afficher l\textquotesingle{}ecran. \\
+\hline
+{\em S\+D\+L\+\_\+\+Event} & event \+: fait les actions generer pas le hardware. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{lock_8h_a3dd80cb222a9d8b62d18dc6a84b21d06_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{lock_8h_a3dd80cb222a9d8b62d18dc6a84b21d06_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{lock_8h_abd9d77bdfe0481d8d4475dac1b18fb12}\label{lock_8h_abd9d77bdfe0481d8d4475dac1b18fb12}} 
+\index{lock.\+h@{lock.\+h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!lock.\+h@{lock.\+h}}
+\subsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}\item[{\hyperlink{structserrure}{serrure} $\ast$}]{lock,  }\item[{\hyperlink{structserrure}{serrure} $\ast$}]{lockpick,  }\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{rec,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$$\ast$}]{yaru }\end{DoxyParamCaption})}
+
+
+
+initialiser les donnees de l\textquotesingle{}enigme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em serrure} & $\ast$lock \+: adresse pour changer avec surface et position du serrure. \\
+\hline
+{\em serrure} & $\ast$lockprick \+: adresse pour changer avec surface et position du poignée. \\
+\hline
+{\em S\+D\+L\+\_\+\+Rect} & $\ast$rec \+: adresse pour changer la position du rotozoom du serrure. \\
+\hline
+{\em S\+D\+L\+\_\+\+Rect$\ast$} & $\ast$yaru \+: adresse pour changer la taille et l\textquotesingle{}angle du serrure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Initialisation de l\textquotesingle{}enigme 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{lock_8h_abd9d77bdfe0481d8d4475dac1b18fb12_icgraph}
+\end{center}
+\end{figure}

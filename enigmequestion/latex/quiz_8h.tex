@@ -1,0 +1,120 @@
+\hypertarget{quiz_8h}{}\section{quiz.\+h File Reference}
+\label{quiz_8h}\index{quiz.\+h@{quiz.\+h}}
+
+
+il y a ici les structures et la liaison des procedures de l\textquotesingle{}enigme.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{quiz_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structentity}{entity}
+\item 
+struct \hyperlink{structquiz}{quiz}
+\item 
+struct \hyperlink{structrest}{rest}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{quiz_8h_a8f387384696c4294f1521ad662b556db}{hover} (S\+D\+L\+\_\+\+Rect pos, int x, int y)
+\item 
+int \hyperlink{quiz_8h_a4fe6a4d28f2dc0d5df627aa0f7f86c65}{initialiser} (\hyperlink{structquiz}{quiz} $\ast$e, \hyperlink{structrest}{rest} $\ast$r)
+\begin{DoxyCompactList}\small\item\em initialiser les donnees de l\textquotesingle{}enigme. \end{DoxyCompactList}\item 
+void \hyperlink{quiz_8h_a161a7788abddb5e59234cd070e1bfa95}{afficher} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structquiz}{quiz} e, \hyperlink{structrest}{rest} r, int var, int $\ast$vie, int $\ast$access)
+\begin{DoxyCompactList}\small\item\em afficher et modifier les donnees de l\textquotesingle{}enigme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+il y a ici les structures et la liaison des procedures de l\textquotesingle{}enigme. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{quiz_8h_a161a7788abddb5e59234cd070e1bfa95}\label{quiz_8h_a161a7788abddb5e59234cd070e1bfa95}} 
+\index{quiz.\+h@{quiz.\+h}!afficher@{afficher}}
+\index{afficher@{afficher}!quiz.\+h@{quiz.\+h}}
+\subsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structquiz}{quiz}}]{e,  }\item[{\hyperlink{structrest}{rest}}]{r,  }\item[{int}]{var,  }\item[{int $\ast$}]{vie,  }\item[{int $\ast$}]{access }\end{DoxyParamCaption})}
+
+
+
+afficher et modifier les donnees de l\textquotesingle{}enigme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+D\+L\+\_\+\+Surface} & $\ast$screen \+: affiche l\textquotesingle{}ecran. \\
+\hline
+{\em quiz} & e \+: utilise la structure obtenu di fichier binaire contien les questions et reponse. \\
+\hline
+{\em rest} & r\+: utilise la structure obtenu du fichier binaire contien interface et titre. \\
+\hline
+{\em S\+D\+L\+\_\+\+Event} & event \+: fait les actions generer pas le hardware. \\
+\hline
+{\em int} & var,$\ast$vie,$\ast$access \+: var est l aleatoire des enigmes vie et access depond si l\textquotesingle{}enigme est fini ou echouée. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+affichage de l\textquotesingle{}enigme. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{quiz_8h_a161a7788abddb5e59234cd070e1bfa95_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{quiz_8h_a161a7788abddb5e59234cd070e1bfa95_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{quiz_8h_a8f387384696c4294f1521ad662b556db}\label{quiz_8h_a8f387384696c4294f1521ad662b556db}} 
+\index{quiz.\+h@{quiz.\+h}!hover@{hover}}
+\index{hover@{hover}!quiz.\+h@{quiz.\+h}}
+\subsubsection{\texorpdfstring{hover()}{hover()}}
+{\footnotesize\ttfamily int hover (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{pos,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{quiz_8h_a8f387384696c4294f1521ad662b556db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{quiz_8h_a4fe6a4d28f2dc0d5df627aa0f7f86c65}\label{quiz_8h_a4fe6a4d28f2dc0d5df627aa0f7f86c65}} 
+\index{quiz.\+h@{quiz.\+h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!quiz.\+h@{quiz.\+h}}
+\subsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily int initialiser (\begin{DoxyParamCaption}\item[{\hyperlink{structquiz}{quiz} $\ast$}]{e,  }\item[{\hyperlink{structrest}{rest} $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+initialiser les donnees de l\textquotesingle{}enigme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quiz} & e \+: obtenir les fichiers binaires contien les questions et reponse. \\
+\hline
+{\em rest} & r\+: obtenir les fichiers binaires contien l\textquotesingle{}interface et titre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Initialisation de l\textquotesingle{}enigme 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{quiz_8h_a4fe6a4d28f2dc0d5df627aa0f7f86c65_icgraph}
+\end{center}
+\end{figure}

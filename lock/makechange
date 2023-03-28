@@ -1,0 +1,2 @@
+game:enigme1.c
+	gcc enigme1.c -o prog -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf -lSDL_gfx

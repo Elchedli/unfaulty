@@ -1,0 +1,5 @@
+<map id="quiz.h" name="quiz.h">
+<area shape="rect" id="node2" href="$create_8c.html" title="dans ce fichier deux fichiers binaires fait les appelles. " alt="" coords="5,80,75,107"/>
+<area shape="rect" id="node3" href="$main_8c.html" title="circuit enigme quiz. " alt="" coords="99,80,160,107"/>
+<area shape="rect" id="node4" href="$quiz_8c.html" title="il y a ici tous les fonctions de l&#39;enigme quiz. " alt="" coords="185,80,242,107"/>
+</map>
